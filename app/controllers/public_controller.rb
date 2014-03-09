@@ -2,7 +2,7 @@ class PublicController < ApplicationController
   
   def album_list
     @albums = Album.find_by_sql('SELECT * FROM albums 
-      WHERE release_date <= \'1978-01-01\' AND artist LIKE \'%Beatles%\'
+      WHERE release_date <= \'1978-01-01\' AND artist_old LIKE \'%Beatles%\'
       ORDER BY release_date ASC;')
   end
   
@@ -10,7 +10,7 @@ class PublicController < ApplicationController
     release_date = '1995-01-01'
     artist = 'Stone'
     @albums = Album.find(:all, 
-      :conditions => ["release_date <= ? AND artist LIKE ?", release_date, '%' + artist + '%'],
+      :conditions => ["release_date <= ? AND artist_old LIKE ?", release_date, '%' + artist + '%'],
       :order => 'title, release_date ASC',
       :limit => 10, :offset => 0)
     render(:action => 'album_list')
@@ -20,7 +20,7 @@ class PublicController < ApplicationController
     release_date = '1995-01-01'
     artist = 'Talking'
     @album = Album.find(:first, 
-      :conditions => ["release_date <= ? AND artist LIKE ?", release_date, '%' + artist + '%'],
+      :conditions => ["release_date <= ? AND artist_old LIKE ?", release_date, '%' + artist + '%'],
       :order => 'title, release_date ASC')
   end
   
