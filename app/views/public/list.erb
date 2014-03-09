@@ -1,0 +1,20 @@
+<h1>Music Library Store</h1>
+
+<table style="width: 400px;">
+<% for album in @albums -%>
+	<tr>
+		<td>
+			<p style="font-size: 14px; font-weight: bold;"><%= html_escape(album.title) %></p>
+		</td>
+		<td>
+			<p style="font-size: 12px; font-weight: bold;"><%= h(album.artist.name) if album.artist %></p>
+			<td><p style="font-size: 12px;"><%= album.price %></p></td>
+		</td>
+	</tr>
+	<tr>
+		<td><p style="font-size: 12px;">Released: <%= album.release_date %></p></td>
+		<td><p style="font-size: 12px;">Genre: <%= h(album.genre) %></p></td>
+		<td><p style="font-size: 12px;">Add to Cart</p></td>
+	</tr>
+<% end -%>
+</table>
