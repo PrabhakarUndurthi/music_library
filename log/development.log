@@ -5954,3 +5954,847 @@ ActiveRecord::RecordNotFound (Couldn't find Album without an ID):
 Rendered rescues/_trace (14.9ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2014-03-09 13:47:57) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Album without an ID):
+  /usr/lib/ruby/vendor_ruby/active_record/base.rb:1601:in `find_from_ids'
+  /usr/lib/ruby/vendor_ruby/active_record/base.rb:620:in `find'
+  app/controllers/albums_controller.rb:16:in `show'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1333:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1333:in `perform_action_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (72.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2014-03-09 13:48:01) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mAlbum Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (1.2ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering albums/show
+Completed in 21ms (View: 13, DB: 3) | 200 OK [http://127.0.0.1/albums/show/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2014-03-09 13:48:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mArtist Load (0.1ms)[0m   [0;1mSELECT * FROM `artists` [0m
+  [4;35;1mFeature Load (0.3ms)[0m   [0mSELECT * FROM `features` [0m
+  [4;36;1mAlbum Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering albums/edit
+  [4;36;1mFeature Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `features`[0m
+  [4;35;1mArtist Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `artists`[0m
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0xb5c37b4c>) on line #3 of app/views/albums/edit.erb:
+1: <h1>Editing album</h1>
+2: 
+3: <%= start_form_tag :action => 'update', :id => @album %>
+4:   <%= render :partial => 'form' %>
+5:   <%= submit_tag 'Edit' %>
+6: <%= end_form_tag %>
+
+    app/views/albums/edit.erb:3
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1334:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (18.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2014-03-09 13:52:06) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mAlbum Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering albums/show
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/albums/show/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2014-03-09 13:52:09) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mAlbum Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering albums/show
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/albums/show/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2014-03-09 13:52:12) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Album without an ID):
+  /usr/lib/ruby/vendor_ruby/active_record/base.rb:1601:in `find_from_ids'
+  /usr/lib/ruby/vendor_ruby/active_record/base.rb:620:in `find'
+  app/controllers/albums_controller.rb:16:in `show'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1333:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1333:in `perform_action_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (16.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2014-03-09 13:55:23) [GET]
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM `artists` [0m
+  [4;35;1mFeature Load (0.1ms)[0m   [0mSELECT * FROM `features` [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Album without an ID):
+  /usr/lib/ruby/vendor_ruby/active_record/base.rb:1601:in `find_from_ids'
+  /usr/lib/ruby/vendor_ruby/active_record/base.rb:620:in `find'
+  app/controllers/albums_controller.rb:36:in `edit'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1333:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1333:in `perform_action_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+  /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (19.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2014-03-09 13:55:28) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mArtist Load (0.1ms)[0m   [0;1mSELECT * FROM `artists` [0m
+  [4;35;1mFeature Load (0.1ms)[0m   [0mSELECT * FROM `features` [0m
+  [4;36;1mAlbum Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering albums/edit
+  [4;36;1mFeature Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `features`[0m
+  [4;35;1mArtist Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `artists`[0m
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0xb5c54b84>) on line #3 of app/views/albums/edit.erb:
+1: <h1>Editing album</h1>
+2: 
+3: <%= start_form_tag :action => 'update', :id => @album %>
+4:   <%= render :partial => 'form' %>
+5:   <%= submit_tag 'Edit' %>
+6: <%= end_form_tag %>
+
+    app/views/albums/edit.erb:3
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1334:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (17.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#list (for 127.0.0.1 at 2014-03-09 14:23:40) [GET]
+Rendering albums/list
+  [4;36;1mAlbum Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #10 of app/views/albums/list.erb:
+7:   <% end %>
+8:   </tr>
+9:   
+10: <% for album in @albums %>
+11:   <tr>
+12:   <% for column in Album.content_columns %>
+13:     <td><%=h album.send(column.name) %></td>
+
+    app/views/albums/list.erb:10
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1340:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (20.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2014-03-09 14:24:12) [GET]
+Rendering albums/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #8 of app/views/albums/_form.erb:
+5: <%= text_field 'album', 'title'  %></p>
+6: 
+7: <p><label for="album_artist_id">Artist ID</label><br/>
+8: <%= select_tag('artist_id', options_for_select([['choose one', '']] + @artists.collect {|art| [art.name, art.id]}, @album.artist_id))  %> (Old artist info:<%= @album.artist_old %>)</p>
+9: 
+10: <p><label for="album_release_date">Release date</label><br/>
+11: <%= datetime_select 'album', 'release_date'  %></p>
+
+    app/views/albums/_form.erb:8
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable_partial.rb:20:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable_partial.rb:19:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable_partial.rb:44:in `render_partial'
+    /usr/lib/ruby/vendor_ruby/action_view/partials.rb:184:in `render_partial'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:267:in `render'
+    app/views/albums/edit.erb:4
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1340:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (23.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2014-03-09 14:24:16) [GET]
+  Parameters: {"id"=>"7"}
+Rendering albums/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #8 of app/views/albums/_form.erb:
+5: <%= text_field 'album', 'title'  %></p>
+6: 
+7: <p><label for="album_artist_id">Artist ID</label><br/>
+8: <%= select_tag('artist_id', options_for_select([['choose one', '']] + @artists.collect {|art| [art.name, art.id]}, @album.artist_id))  %> (Old artist info:<%= @album.artist_old %>)</p>
+9: 
+10: <p><label for="album_release_date">Release date</label><br/>
+11: <%= datetime_select 'album', 'release_date'  %></p>
+
+    app/views/albums/_form.erb:8
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable_partial.rb:20:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable_partial.rb:19:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable_partial.rb:44:in `render_partial'
+    /usr/lib/ruby/vendor_ruby/action_view/partials.rb:184:in `render_partial'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:267:in `render'
+    app/views/albums/edit.erb:4
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1340:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (81.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2014-03-09 14:24:22) [GET]
+Rendering albums/show
+  [4;35;1mAlbum Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/albums/show.erb:
+1: <% for column in Album.content_columns %>
+2: <p>
+3:   <b><%= column.human_name %>:</b> <%=h @album.send(column.name) %>
+4: </p>
+5: <% end %>
+6: 
+
+    /usr/lib/ruby/vendor_ruby/active_support/whiny_nil.rb:52:in `method_missing'
+    app/views/albums/show.erb:3:in `send'
+    app/views/albums/show.erb:3
+    app/views/albums/show.erb:1:in `each'
+    app/views/albums/show.erb:1
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1340:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (18.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#list (for 127.0.0.1 at 2014-03-09 14:24:37) [GET]
+Rendering albums/list
+  [4;36;1mAlbum Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #10 of app/views/albums/list.erb:
+7:   <% end %>
+8:   </tr>
+9:   
+10: <% for album in @albums %>
+11:   <tr>
+12:   <% for column in Album.content_columns %>
+13:     <td><%=h album.send(column.name) %></td>
+
+    app/views/albums/list.erb:10
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/vendor_ruby/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/vendor_ruby/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/vendor_ruby/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1252:in `render_for_file'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:936:in `render_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1328:in `default_render'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:1340:in `perform_action_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:52:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `each'
+    /usr/lib/ruby/vendor_ruby/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/vendor_ruby/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:59:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:13:in `run'
+
+Rendered rescues/_trace (76.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
